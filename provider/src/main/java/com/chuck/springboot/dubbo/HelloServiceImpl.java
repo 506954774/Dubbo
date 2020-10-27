@@ -1,6 +1,8 @@
 package com.chuck.springboot.dubbo;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,10 +14,14 @@ import org.springframework.stereotype.Component;
  **/
 @Service(interfaceClass = IHelloService.class)
 @Component
+@Slf4j
 public class HelloServiceImpl implements IHelloService {
     //...
+    private static final Logger logger = Logger.getLogger(HelloServiceImpl.class);
 
     public String sendMessage(String msg) {
+        //logger.info("provider:"+msg);
+        System.out.println("msg = [" + msg + "]");
         return "provider:"+msg;
     }
 }

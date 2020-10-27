@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  **/
 @Component
 public class HelloConsumer {
-    @Reference(interfaceClass = IHelloService.class)
+    @Reference(interfaceClass = IHelloService.class,loadbalance = "roundrobin")
     private IHelloService iHelloService;
 
     public void getMessage(String msg) {

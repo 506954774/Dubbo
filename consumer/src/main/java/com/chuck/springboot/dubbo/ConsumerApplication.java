@@ -14,7 +14,10 @@ public class ConsumerApplication {
 		ConfigurableApplicationContext run = SpringApplication.run(ConsumerApplication.class, args);
 
 		HelloConsumer helloConsumer = (HelloConsumer) run.getBean("helloConsumer");
-		helloConsumer.getMessage("hello");
+
+		for (int i = 0; i < 10; i++) {
+			helloConsumer.getMessage("hello"+i);
+		}
 	}
 
 }
