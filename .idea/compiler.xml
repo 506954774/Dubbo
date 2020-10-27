@@ -38,10 +38,18 @@
         <processorPath useClasspath="true" />
         <module name="consumer" />
       </profile>
+      <profile default="false" name="Annotation profile for parent" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="parent" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="consumer" target="1.8" />
       <module name="dubbo" target="1.8" />
+      <module name="parent" target="1.8" />
       <module name="provider" target="1.8" />
     </bytecodeTargetLevel>
   </component>
