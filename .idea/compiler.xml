@@ -17,13 +17,6 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Annotation profile for dubbo" enabled="true">
-        <sourceOutputDir name="target\generated-sources\annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="dubbo" />
-      </profile>
       <profile default="false" name="Annotation profile for provider" enabled="true">
         <sourceOutputDir name="target\generated-sources\annotations" />
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
@@ -48,7 +41,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="consumer" target="1.8" />
-      <module name="dubbo" target="1.8" />
       <module name="parent" target="1.8" />
       <module name="provider" target="1.8" />
     </bytecodeTargetLevel>

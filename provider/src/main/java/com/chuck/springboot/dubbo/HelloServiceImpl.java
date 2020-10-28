@@ -17,11 +17,10 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class HelloServiceImpl implements IHelloService {
     //...
-    private static final Logger logger = Logger.getLogger(HelloServiceImpl.class);
 
     public String sendMessage(String msg) {
-        //logger.info("provider:"+msg);
-        System.out.println("msg = [" + msg + "]");
+        log.info("provider:"+msg);
+        //System.out.println("msg = [" + msg + "]");
         return "provider:"+msg;
     }
 }
