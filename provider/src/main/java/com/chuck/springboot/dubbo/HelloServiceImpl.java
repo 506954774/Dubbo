@@ -1,8 +1,8 @@
 package com.chuck.springboot.dubbo;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.example.demo.IHelloService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * 创建/修改时间: 2020/10/21 14:49
  * Copyright :  版权所有
  **/
-@Service(interfaceClass = IHelloService.class)
+@Service(interfaceClass = IHelloService.class,loadbalance = "roundrobin")
 @Component
 @Slf4j
 public class HelloServiceImpl implements IHelloService {

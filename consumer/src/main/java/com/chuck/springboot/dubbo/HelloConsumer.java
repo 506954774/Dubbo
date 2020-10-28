@@ -1,6 +1,7 @@
 package com.chuck.springboot.dubbo;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.example.demo.IHelloService;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Component;
  **/
 @Component
 public class HelloConsumer {
-    @Reference(interfaceClass = IHelloService.class,loadbalance = "roundrobin")
+    @Reference(interfaceClass = IHelloService.class )
     private IHelloService iHelloService;
 
     public void getMessage(String msg) {
