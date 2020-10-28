@@ -45,10 +45,18 @@
         <processorPath useClasspath="true" />
         <module name="api" />
       </profile>
+      <profile default="false" name="Annotation profile for demo" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="demo" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api" target="1.5" />
       <module name="consumer" target="1.8" />
+      <module name="demo" target="1.5" />
       <module name="parent" target="1.8" />
       <module name="provider" target="1.8" />
     </bytecodeTargetLevel>
