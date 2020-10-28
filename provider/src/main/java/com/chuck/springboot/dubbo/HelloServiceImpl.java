@@ -20,7 +20,6 @@ public class HelloServiceImpl implements IHelloService {
 
     public String sendMessage(String msg) {
         log.info("provider:"+msg);
-        //System.out.println("msg = [" + msg + "]");
         return "provider:"+msg;
     }
 }
