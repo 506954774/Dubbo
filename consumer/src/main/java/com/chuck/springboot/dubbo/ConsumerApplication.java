@@ -84,8 +84,12 @@ public class ConsumerApplication {
 		log.info("主线程执行总耗时:" + (time3-time1));
 
 		log.info("结果:" + call.get()+","+call2.get()+",整个业务实际耗时"+(System.currentTimeMillis()-time1));
+		log.info("结果:" + call.get()+","+call2.get()+",整个业务实际耗时"+(System.currentTimeMillis()-time1));
+		log.info("结果:" + call.get() +",第一个业务实际耗时"+(System.currentTimeMillis()-time1));
+		log.info("结果:" + call2.get() +",第二个业务实际耗时"+(System.currentTimeMillis()-time1));
 
 		log.info("主线程执行总耗时:" + (time3-time1));
+		log.info("finish" );
 
 
 	}
