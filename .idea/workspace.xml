@@ -655,7 +655,7 @@
       <workItem from="1604451735855" duration="1138000" />
       <workItem from="1604482799552" duration="976000" />
       <workItem from="1606187145580" duration="933000" />
-      <workItem from="1606444167032" duration="5809000" />
+      <workItem from="1606444167032" duration="6423000" />
     </task>
     <task id="LOCAL-00001" summary="zookeeper 忽略文件">
       <created>1603790472315</created>
@@ -711,11 +711,17 @@
       <option name="project" value="LOCAL" />
       <updated>1606448757499</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="zkClient使用,注意序列化的问题,否则会报错">
+      <created>1606457148954</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606457148954</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55332000" />
+    <option name="totallyTimeSpent" value="55946000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
