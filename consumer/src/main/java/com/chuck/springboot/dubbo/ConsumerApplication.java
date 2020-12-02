@@ -28,12 +28,12 @@ public class ConsumerApplication {
 
 
 
-		for (int i = 0; i < 10; i++) {
-			//helloConsumer.getMessage("hello"+i);
+		for (int i = 0; i < 1; i++) {
+			helloConsumer.getMessage("hello"+i);
 		}
 		//synchronous(helloConsumer);
 		try {
-			asynchronous(helloConsumer);
+			//asynchronous(helloConsumer);
 		} catch ( Exception e) {
 			log.error(e.getMessage());
 		}
